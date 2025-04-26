@@ -143,37 +143,3 @@ export default function App() {
     </div>
   );
 }
-
-
-
-  
-// import { useState, useEffect } from 'react';
-// import { TodoContext } from './TodoContext';
-// import AddTodo from './AddTodo';
-// import TodoList from './TodoList';
-
-// function App() {
-//   const [todos, setTodos] = useState([]);
-//   const [input, setInput] = useState('');
-
-//   useEffect(() => {
-//     const savedTodos = JSON.parse(localStorage.getItem('todos')) || [];
-//     setTodos(savedTodos);
-//   }, []);
-
-//   useEffect(() => {
-//     localStorage.setItem('todos', JSON.stringify(todos));
-//   }, [todos]);
-
-//   return (
-//     <TodoContext.Provider value={{ todos, setTodos, input, setInput }}>
-//       <div>
-//         <h2>To-Do List</h2>
-//         <AddTodo />
-//         <TodoList />
-//       </div>
-//     </TodoContext.Provider>
-//   );
-// }
-
-// export default App;
